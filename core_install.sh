@@ -80,7 +80,7 @@ sudo chmod 600 /tmp/ezremaster/extract/usr/local/etc/ssh/ssh_host*key
 # Start the SSH server on boot
 #sudo cp -f /tmp/core_install/bootlocal.sh /tmp/ezremaster/extract/opt/bootlocal.sh 
 sudo cp /tmp/ezremaster/extract/opt/bootlocal.sh /tmp/ezremaster/extract/opt/bootlocal.sh.backup
-sudo chmod 666 /tmp/ezremaster/extract/opt/bootlocal.sh
+sudo chmod 774 /tmp/ezremaster/extract/opt/bootlocal.sh
 sudo echo "/usr/local/etc/init.d/openssh start" >> /tmp/ezremaster/extract/opt/bootlocal.sh
 
 # Give the "tc" user a password
