@@ -32,7 +32,7 @@
 #    /tmp/core_install.sh 
 
 # Install openssh and ezremaster
-tce-load -iw openssh.tcz ezremaster.tcz nmap.tcz nmap-db.tcz tcpdump.tcz python.tcz socat.tcz curl.tcz proxychains-ng.tcz filesystems-5.4.3-tinycore.tcz        
+tce-load -iw openssh.tcz ezremaster.tcz nmap.tcz nmap-dbs.tcz tcpdump.tcz python.tcz socat.tcz curl.tcz proxychains-ng.tcz filesystems-5.4.3-tinycore.tcz        
            
 # Start the SSH server
 sudo /usr/local/etc/init.d/openssh start
