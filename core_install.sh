@@ -38,7 +38,7 @@ tce-load -iw openssh.tcz ezremaster.tcz
 sudo /usr/local/etc/init.d/openssh start
 
 # wget the Core-current.iso file to /tmp
-wget http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/Core-current.iso -P /tmp
+wget http://distro.ibiblio.org/tinycorelinux/11.x/x86/release/TinyCore-current.iso -P /tmp
 
 # ezremaster walkthrough
 read -p "Open ezremaster. Click on the ezremaster icon (looks like a CD with 'ez' on it) at the bottom of the screen."
@@ -64,6 +64,7 @@ sudo cp -f /usr/local/etc/ssh/ssh_host_* /tmp/ezremaster/extract/usr/local/etc/s
 
 # Edit the SSH server configuration
 #sudo cp -f /tmp/core_install/sshd_config /tmp/ezremaster/extract/usr/local/etc/ssh/sshd_config
+sudo cp -f /usr/local/etc/ssh/sshd_config /tmp/ezremaster/extract/usr/local/etc/ssh/sshd_config
 sudo cp /tmp/ezremaster/extract/usr/local/etc/ssh/sshd_config /tmp/ezremaster/extract/usr/local/etc/ssh/sshd_config.backup
 sudo sed -i 's/#PermitRootLogin/PermitRootLogin/' /tmp/ezremaster/extract/usr/local/etc/ssh/sshd_config
 sudo sed -i 's/#GatewayPorts no/GatewayPorts yes/' /tmp/ezremaster/extract/usr/local/etc/ssh/sshd_config
