@@ -32,7 +32,7 @@
 #    /tmp/core_install.sh 
 
 # Install openssh and ezremaster
-tce-load -iw openssh.tcz ezremaster.tcz nmap.tcz nmap-dbs.tcz tcpdump.tcz python.tcz socat.tcz curl.tcz proxychains-ng.tcz filesystems-5.4.3-tinycore.tcz scsi-5.4.3-tinycore.tcz raid-dm-5.4.3-tinycore.tcz bash.tcz lsscsi.tcz     
+tce-load -iw openssh.tcz ezremaster.tcz nmap.tcz nmap-dbs.tcz tcpdump.tcz python.tcz socat.tcz curl.tcz proxychains-ng.tcz filesystems-5.4.3-tinycore.tcz scsi-5.4.3-tinycore.tcz raid-dm-5.4.3-tinycore.tcz bash.tcz lsscsi.tcz parted.tcz    
            
 #Copy the sshd config file
 sudo cp /usr/local/etc/ssh/sshd_config.orig /usr/local/etc/ssh/sshd_config
